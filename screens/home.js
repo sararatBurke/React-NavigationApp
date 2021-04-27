@@ -6,7 +6,7 @@ export default function Home() {
    
     return (
         <View style={styles.container}>
-            <Text>Home Screen</Text>
+            <Text style={styles.headTitle}>Home Screen</Text>
         </View>
     );
 }
@@ -17,6 +17,7 @@ const styles = StyleSheet.create({
     },
     headTitle:{
         fontFamily: 'Roboto-medium',
+        color: '#e43d32'
     }
 })
 
