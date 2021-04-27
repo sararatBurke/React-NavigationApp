@@ -5,13 +5,21 @@ import ReviewDetails from '../screens/reviewDetails';
 
 const screens = {
     Home:{
-        screen: Home
+        screen: Home,
+        navigationOptions: { title: 'Home' },
     },
     ReviewDetails: {
-        screen: ReviewDetails
+        screen: ReviewDetails,
+        navigationOptions: { title: 'Review Details' },
     }
 }
 
-const HomeStack = createStackNavigator(screens);//this create StackNavigate
+const HomeStack = createStackNavigator(screens, {
+    defaultNavigationOptions: {
+        headerStyle: { 
+            backgroundColor: '#006699',
+    }
+    }
+});
 export default createAppContainer(HomeStack);
 
