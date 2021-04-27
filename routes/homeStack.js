@@ -1,4 +1,4 @@
-import { createStackNavigation } from 'react-navigation-stack';
+import { createStackNavigator } from 'react-navigation-stack';
 import { createAppContainer } from 'react-navigation';
 import Home from '../screens/home';
 import ReviewDetails from '../screens/reviewDetails';
@@ -12,5 +12,6 @@ const screens = {
     }
 }
 
-const HomeStack = createStackNavigation(screens);//this create StackNavigate
+const HomeStack = createStackNavigator(screens);//this create StackNavigate
 export default createAppContainer(HomeStack);
+
