@@ -1,7 +1,7 @@
-import React, {usedState} from 'react';
+import React, {useState} from 'react';
 import * as Font from 'expo-font';
 import Home from './screens/home';
-import { AppLoading } from 'expo';
+import AppLoading from 'expo-app-loading';
 
 const getFonts = () => Font.loadAsync({
     'Roboto-regular': require('./assets/fonts/Roboto-Regular.ttf'),
@@ -23,8 +23,9 @@ export default function App() {
       <AppLoading
       startAsync={getFonts}
       onFinish={() =>  setFontsLoaded(true) }
+      onError={console.warn}
       />
-    )
+    );
   }
  
 }

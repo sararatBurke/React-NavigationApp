@@ -14,6 +14,9 @@ export default function Home() {
 const styles = StyleSheet.create({
     container:{
         padding: 24,
+    },
+    headTitle:{
+        fontFamily: 'Roboto-medium',
     }
 })
 
